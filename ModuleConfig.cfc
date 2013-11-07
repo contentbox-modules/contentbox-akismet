@@ -33,8 +33,9 @@ component {
 		// Compressor Settings
 		settings = {
 			// Api Key
-			api_key = ""
-			// Delete if spam
+			api_key = "",
+			// Block if marked as spam
+			block = false
 		};
 
 		// SES Routes
