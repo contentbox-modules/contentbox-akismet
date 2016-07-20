@@ -1,10 +1,3 @@
-/**
-********************************************************************************
-Copyright 2009 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
-www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
-********************************************************************************
-@author Luis Majano
-**/
 component{
 
 	// DI

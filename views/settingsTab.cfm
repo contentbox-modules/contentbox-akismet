@@ -15,7 +15,7 @@
 				<!--- API Key --->
 				#html.textField(name="akismet_apikey", size="50", value=prc.akismet_settings.api_key)#
 				<!--- Verify --->
-				<button id="btnVerifyAkismet" class="btn btn-info" onclick="return verifyAkismet()">Verify Key</button>
+				<button id="btnVerifyAkismet" class="btn btn-info btn-sm" onclick="return verifyAkismet()">Verify Key</button>
 			</div>
 		</div>
 
@@ -35,7 +35,7 @@
 $(document).ready(function() {
 });
 function verifyAkismet(){
-	$("##btnVerifyAkismet").html( '<i class="icon-spin icon-spinner"></i> Verifying...' );
+	$("##btnVerifyAkismet").html( '<i class="fa fa-spin fa-spinner"></i> Verifying...' );
 	// post it
 	$.post( '#prc.xehVerifyAkismet#', { apikey : $("##akismet_apikey").val() }, function(data){
 		$("##akismetControlGroup").removeClass().addClass( "control-group" );

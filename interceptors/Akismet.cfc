@@ -1,26 +1,15 @@
-/**
-********************************************************************************
-Copyright 2009 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
-www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
-********************************************************************************
-@author Luis Majano
-Askismet interface www.akismet.com
-Developer API http://akismet.com/development/api/
-Based on CFAkismet by Brandon Harper
-
-**/
 component{
 
 	// DI
 	property name="cb" 				inject="cbHelper@cb";
-	property name="akismet" 		inject="akismet@akismet";
+	property name="akismet" 		inject="provider:akismet@akismet";
 	property name="coldbox"			inject="coldbox";
 
 	// listen on the comment navigation
 	function cbadmin_onCommentSettingsNav( event, interceptData, buffer ){
 		savecontent variable="local.tab"{
 			writeOutput('
-				<li><a href="##akismet" data-toggle="tab"><i class="icon-cloud icon-large"></i> Akismet</a></li>
+				<li><a href="##akismet" data-toggle="tab"><i class="fa fa-cloud"></i> Akismet</a></li>
 			');
 		}
 

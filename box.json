@@ -1,0 +1,38 @@
+{
+    "name":"ContentBox Akismet",
+    "shortDescription":"TThis module allows you to add Akismet capabilities to your ContentBox CMS",
+    "location":"https://github.com/contentbox-modules/contentbox-akismet/archive/master.zip",
+    "version":"2.0.0",
+    "slug":"contentbox-akismet",
+    "author":"Ortus Solutions <info@ortussolutions.com>",
+    "homepage":"https://github.com/contentbox-modules/contentbox-akismet",
+    "documentation":"https://github.com/contentbox-modules/contentbox-akismet",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/contentbox-modules/contentbox-akismet"
+    },
+    "bugs":"https://github.com/contentbox-modules/contentbox-akismet/issues",
+    "type":"contentbox-modules",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        "cfakismet":"^2.0.0"
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        "cfakismet":"modules/cfakismet"
+    },
+    "ignore":[
+        "**/.*",
+        "tests"
+    ]
+}
